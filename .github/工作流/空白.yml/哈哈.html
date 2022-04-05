@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML DOM对象学习</title>
+	<script type="text/javascript">
+		window.οnlοad=function(){
+			//var para=document.createElement("p");
+			//var node=document.createTextNode("这是一个新段落。");
+			//para.appendChild(node); //<p>这是一个新段落。</p>
+			//var element=document.getElementById("div1");
+			//element.appendChild(para);
+			
+			var hn = document.createElement("h1");  //创建一个元素节点
+			var ht = document.createTextNode("新节点h1内容"); //创建一个文本节点
+			hn.appendChild(ht);  //增加文本节点'ht'到元素节点'hn'上
+			var element=document.getElementById("p1"); //获取id为'p1'的元素节点
+			element.appendChild(hn);  //添加元素节点'hn'到节点'element'上
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">
+			 这是一个段落。
+		     <!--<h1>新节点h1内容</h1>-->
+		</p>
+		<p id="p2">这是另一个段落。</p>
+	</div>
+	
+</body>
+</html>
