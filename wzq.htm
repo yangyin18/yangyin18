@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    body 
+       {
+	background-image:url('https://s1.ax1x.com/2022/10/07/x38bpn.jpg');
+	background-color:#306754;
+     }
+     .zi2{
+   
+       font-size:200px;
+       color:white;
+       position: absolute;
+       top:1150px;
+     }
+        .zi{
+            width: 80px;
+            height: 80px;
+           
+     //       position: absolute;
+            
+
+        }
+        .work{
+            width: 1000px;
+            height: 1000px;
+            border: 50px solid black;
+            background-color: black;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+
+        }
+    </style>
+   <script type="text/javascript"src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    </script>
+    <script type="text/javascript">
+
+       window.onerror = function(a,b,c){
+       
+          alert([a,c]);
+    
+       
+       
+       }
+        $(document).ready(function(){
+        
+        function img(){
+        
+        img_white = new Image()
+        img_white.src ="https://s1.ax1x.com/2022/10/03/xQP7N9.jpg"
+        
+        img_black = new Image()
+        img_black.src ="https://s1.ax1x.com/2022/10/03/xQinEQ.jpg"
+        
+        
+        };
+        
+        function ch(y4,x4){
+      //  alert(list_all[y4][x4])
+       var num=0;
+       string = +y4.toString()+"_"+x4.toString()
+        if(list_all[y4][x4]=="白"){
+        
+         string = +y4.toString()+"_"+x4.toString()
+        
+         $('#'+string).attr("src",img_white.src)
+    
+        }else if(list_all[y4][x4]=="黑"){
+       
+         
+           $("#"+string).attr("src",img_black.src)
+          
+       
+         
+        }; };
+        
+        
+        
+        var list_n =[];
+        var kai,zi,yu;
+        var bai2 = 0;
+        var hei2 = 0;
+        function end(){
+        
+        try{
+        if(yu==0){
+        
+        var n = 0;
+        var max=0;
+        for(u in fen){
+         var l_ = fen[u][0][0].toString().split(",")
+        var y_ = l_[0];
+        var x_ = l_[1]
+       
+            if(fen[u][0][1]>max&&fen[u][0][0] != undefined&&list_all[y_][x_]=="无"){
+            max = fen[u][0][1];
+            n = u;
+            };
+           };
+       
+        var l_ = fen[n][0][0].toString().split(",")
+        var y_2 = l_[0];
+        var x_2 = l_[1]
+       
+       list_all[Number(y_2)][Number(x_2)]=w
+        $("#"+y_2+"_"+x_2).attr("src",im);
+        yu=1
+        };}catch(err){
+        for(var num=5;num<11;num++){
+           for(var nm=5;nm<11;num++){
+           list_all[num][nm]=w
+        $("#"+"5"+"_"+"5").attr("src",im);
+        yu=1
+        break;
+       }if(yu==1){
+         break;
+         } };
+       // list_all[Number(y_)][Number(x_)]=w
+      //  $("#"+y_+"_"+x_).attr("src",im);
+           } };
+        var w="";
+        var im ="";
+        function be(){
+        randint = Math.round(Math.random(1,2));
+        if(randint==0){
+          alert("机器人先，你白棋")
+          list_all[7][7]=="黑";
+          w="黑"
+          zi = 5;
+          yu=1
+          im=img_black.src;
+          $("#7_7").attr("src",img_black.src);
+          kai = 0;
+          $(".zi2").text("你是白");
+          }else{alert("你先")
+                kai = 1;
+                zi=10;
+                w="白";
+                im=img_white.src;
+                yu=1
+                $(".zi2").text("你是黑");
+          }
+              
+        };
+        var fen =[];
+        
+        function ja(m,zuo){
+      
+        var e =0
+      
+        for(i in fen){
+        
+           if(list_n[zuo]==fen[i][0][0]){
+               
+             fen[i][0][1] = fen[i][0][1]+m
+             
+             e += 1
+           }
+        }if(e==0){
+          
+          fen[fen.length]=[]
+          fen[fen.length-1][0] =[];
+          fen[fen.length-1][0].push(list_n[zuo])
+          
+          fen[fen.length-1][0].push(m);
+          
+}
+          }
+        var cont = 0;
+        function ji(txt,list_n){
+        
+        r = Math.random(0,10);
+      
+        if(kai==0){
+           hei2 = 10;
+           bai2=0;
+           }else{
+           bai2 = 10;
+           hei2=0;
+           }
+        
+        if(/无白无/.test(txt)){
+        
+         var y =txt.indexOf("白")
+         
+          
+            ja(10+bai2,y-1);
+            
+        };
+         
+         if(/无黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+            ja(10+hei2,y+1)
+            ja(10+hei2,y+1)
+            
+        };
+        if(/无白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+            ja(20+bai2,y+1)
+            ja(20+bai2,y-1)
+            
+        };
+        if(/无白无白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(80+bai2,y+1)
+            
+        }; if(/无白无无白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(80+bai2,y+1)
+            ja(80+bai2,y+2)
+            
+        };
+        
+        if(/无黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(20+hei2,y-1)
+            
+        };if(/无黑无黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(50+hei2,y+1)
+            
+        };
+        if(/无白白白无无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(260+bai2,y+3)
+            
+        };
+        if(/无白白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(200+bai2,y+3)
+            
+        };
+        
+        if(/无无白白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(260+bai2,y-1)
+            
+        };
+        if(/黑白白白无无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(40+hei2,y+3)
+            
+        };
+        if(/无无白白白黑/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(40+bai2,y-1)
+            
+        };
+        
+        if(/无黑黑黑无无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(260+hei2,y+3)
+            
+        };
+        if(/无黑黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+            ja(200+hei2,y-1)
+            ja(200+hei2,y+3)
+            
+        };
+        if(/无无黑黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(260+hei2,y-1)
+            
+        };
+        if(/白黑黑黑无无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(40+hei2,y+3)
+            
+        };
+        if(/无无黑黑黑白/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(40+hei2,y-1)
+            
+        };
+        if(/无白白白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y-1)
+            
+        };
+        if(/无黑黑黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y-1)
+            
+        };
+        if(/白白白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y+4)
+            
+        };
+        if(/无白白白白/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y-1)
+            
+        };
+        if(/黑黑黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y+4)
+            
+        }
+        if(/无黑黑黑黑/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y-1)
+            
+        };if(/无白白无白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(210+bai2,y+2)
+            
+        };if(/无白白无白黑/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(60+bai2,y+2)
+            
+        };if(/无白无白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(210+bai2,y+1)
+            
+        };if(/无白无白白黑/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(60+bai2,y+1)
+            
+        }; if(/黑白无白白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(60+bai2,y+1)
+            
+        }; 
+        if(/黑白白无白无/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(60+bai2,y+2)
+            
+        };if(/无黑黑无黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(210+hei2,y+2)
+            
+        };if(/无黑无黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(210+hei2,y+1)
+            
+        };if(/无黑黑无黑白/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(60+hei2,y+2)
+            
+        }; if(/白黑黑无黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(60+hei2,y+2)
+            
+        };if(/白黑无黑黑无/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(60+hei2,y+1)
+            
+        };if(/无黑无黑黑白/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(60+hei2,y+2)
+            
+        };
+        if(/黑黑无黑黑/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(800+hei2,y+2)
+            
+        }; if(/白白无白白/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y+2)
+            
+        };if(/白白白无白/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y+3)
+            
+        };if(/白无白白白/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y+1)
+            
+        };
+        if(/无白白白白/.test(txt)){
+
+         var y =txt.indexOf("白")
+
+            ja(1000+bai2,y-1)
+            
+        };
+        if(/黑黑黑无黑/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y+2)
+            
+        };if(/黑无黑黑黑/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y+1)
+            
+        };
+        if(/黑黑无黑黑/.test(txt)){
+
+         var y =txt.indexOf("黑")
+
+            ja(1000+hei2,y+3)
+            
+        };
+     };
+     var x2 = 0;
+     var y2 = 0;
+        function win(){
+        
+        for(var e=0;e<22;e++){
+            
+            var txt = "";
+             for(var a=0;a<=e;a++){
+             
+               if(bai==5||hei==5){
+               alert("结束");
+               location.reload(true)
+               bai = 0;
+               hei = 0;
+             
+               };
+            if(e<12){
+                
+                txt = txt + list_all[a][11-e+a];
+                x2 = a;
+                y2 = 11-e+a;
+                
+              
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+               // alert(list_n)
+                if(list_all[a][11-e+a]=="白"){
+                 bai +=1;
+                 hei = 0;
+                 
+               }else if(list_all[a][11-e+a]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+                
+                 hei =0;
+                 bai =0;
+               };   }else{//上面那个if
+              if(22-e+a>11){break;};
+              
+              y2 = a
+              x2 = 22-e+a
+           
+               txt = txt + list_all[22-e+a][a];
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+               if(list_all[22-e+a][a]=="白"){
+                 bai +=1;
+                 hei = 0;
+                 
+               }else if(list_all[22-e+a][a]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+                
+                 hei =0;
+                 bai =0;
+               };
+               
+               
+               }};
+              ji(txt,list_n);
+
+               list_n = [];
+               }
+        
+        
+          for(var e=0;e<22;e++){
+          
+            var txt = "";
+             for(var a=0;a<=e;a++){
+             
+               if(bai==5||hei==5){
+               alert("结束");
+               location.reload(true)
+               bai = 0;
+               hei = 0;
+              
+               };
+            if(e<12){
+                txt = txt + list_all[a][e-a];
+                x2 = a;
+                y2 = e-a;
+             
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+                if(list_all[a][e-a]=="白"){
+                 bai +=1;
+                 hei = 0;
+                 
+               }else if(list_all[a][e-a]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+               
+                 hei =0;
+                 bai =0;
+               };   }else{//上面那个if
+              if(22-e+a>12){break;};
+               txt = txt + list_all[11-a][22-e+a];
+                x2 = 11-a;
+                y2 = 22-e+a;
+             
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+               if(list_all[11-a][22-e+a]=="白"){
+                 bai +=1;
+                 hei = 0;
+                 
+               }else if(list_all[11-a][22-e+a]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+           
+                 hei =0;
+                 bai =0;
+               };
+               
+               
+               }
+               
+               
+                }
+               ji(txt,list_n);
+               list_n = [];
+               };
+               
+          
+          for(o in list_all){
+             var txt = "";
+             bai = 0;
+             hei = 0;
+             for(q in list_all){
+               
+               
+               txt = txt + list_all[q][o];
+                x2 = q;
+                y2 = o;
+              
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+               if(list_all[q][o]=="白"){
+                 bai +=1;
+                 hei = 0;
+               }else if(list_all[q][o]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+               
+                 hei =0;
+                 bai =0;
+               };
+         if(bai==5||hei==5){
+               alert("结束");
+               location.reload(true)
+               };    };
+            
+             ji(txt,list_n);
+             list_n = [];
+             
+          };
+          for(i in list_all){
+             bai = 0;
+             hei = 0
+            
+             var txt = "";
+          //   alert(i)
+             for(var h=0;h<list_all.length;h++){
+         //    alert(list_all[i][h])
+               txt = txt + list_all[i][h];
+                x2 = i;
+                y2 = h;
+              
+                list_n[list_n.length] = [];
+                list_n[list_n.length-1].push(x2,y2)
+               if(list_all[i][h]=="白"){
+                 bai +=1;
+                 hei = 0;
+              //   alert([x2,y2])
+               }else if(list_all[i][h]=="黑"){
+                 hei += 1;
+                 bai =0;
+               }else{
+               
+                 hei =0;
+                 bai =0;
+               };
+           if(bai==5||hei==5){
+               alert("结束");
+               location.reload(true)
+               bai = 0;
+               hei = 0;
+              
+               };  };
+               
+               ji(txt,list_n);
+               
+             list_n = [];
+          };  
+        };
+        var choose = 0;
+        var img_white;
+        var img_black;
+        var bai = 0;
+        var hei = 0;
+        img();
+        var list_all = [];
+        var y1 = 0;
+        function ko(){
+        
+        for(var n=1;n<600;n+=50){  
+          var x1 = 0;
+          
+          for(var i=1;i<600;i+=50){    
+           
+           $("div").append('<img src="https://s1.ax1x.com/2022/10/02/xKzdFP.jpg" alt="xKzdFP.jpg"  class="zi" id='+ x1.toString() + "_" + y1.toString()+'>')
+        //  $("#"+[x1,y1].toString()).css({"left":i
+            x1++;
+       }
+       y1++;
+       }
+       list_all = [];
+       for(var m=0;m<12;m++){
+           list_all[m]=[];
+           for(var v=0;v<12;v++){
+              list_all[m].push("无")
+          
+       
+       };    
+         };};
+         ko();
+         
+      // alert(list_all[0])
+       function dian(){
+     //  alert(list_all[x1][y1]);
+          if(yu==1){
+           if(kai==0&&list_all[x1][y1]=="无"){
+             list_all[x1][y1]="白"
+             list_all[7][7]="黑"
+             ch(Number(x1),Number(y1));
+             yu=0
+             
+           }else if(kai==1&&list_all[x1][y1]=="无"){list_all[x1][y1]="黑"
+            ch(Number(x1),Number(y1));
+            yu=0
+            };
+        }   };
+       be();
+       $("img").click(function(){
+      
+       var xy = $(this).attr("id")
+       
+       fen =[];
+       var list_xy = xy.split("_");
+       x1 = list_xy[0];
+       
+       y1 = list_xy[1];
+     
+       dian();
+       
+       win();
+       end();
+      
+      
+     //  alert(list_all[y1][x1])
+       });
+         
+             
+                         
+                           });
+    </script>
+</head>
+<body>
+    
+    <div class="work">
+  
+    </div>
+    <h1 class="zi2">你是</h1>
+</body>
+</html> 
