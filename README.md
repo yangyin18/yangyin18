@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3500&pause=800&color=38BDF8&center=true&vCenter=true&width=560&height=60&lines=Software+Engineering+Student;Python+%E2%80%A2+Flask+%E2%80%A2+Web+Developer;Keep+Learning,+Keep+Growing" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3500&pause=800&color=38BDF8&center=true&vCenter=true&width=560&height=60&lines=Software+Engineering+Student;Java+%E2%80%A2+Python+%E2%80%A2+AI+%26+LLM;Keep+Learning,+Keep+Growing" alt="typing" />
 </p>
 
 <h2 align="center">👋 Hi there, I'm <b>yangyin18</b></h2>
 
 <p align="center">
-  🎓 软件工程专业在读 · 💻 用 Python / Flask 写点小东西 · 🌐 <a href="https://yangyin18.github.io">yangyin18.github.io</a>
+  🎓 软件工程专业在读 · 💻 Java / Python · 🤖 AI & 大模型爱好者
 </p>
 
 ---
@@ -13,11 +13,13 @@
 ### 🧰 Tech Stack
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
 </p>
 
 ### 📊 GitHub Stats
