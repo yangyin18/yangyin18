@@ -1020,3 +1020,56 @@
     <rect x="748" y="113" width="1" height="1" fill="#3f3f3f"/>
     <rect x="745" y="110" width="1" height="1" fill="#ffffff"/>
 </svg>
+
+## 👋 你好,我是 yangyin18
+
+<p align="center">
+  <b>软件工程学生</b> 🎓 &nbsp;·&nbsp; <b>Java / Spring Boot 后端</b> ☕ &nbsp;·&nbsp; <b>Minecraft 模组开发</b> ⛏️ &nbsp;·&nbsp; <b>安全研究 / CTF</b> 🔐
+  <br/>
+  <em>「代码是写给人类的诗。」</em>
+</p>
+
+---
+
+### 🛠️ 技术栈 / Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,python,flask,html,css,js,mysql,git,linux,idea,vscode&theme=dark" alt="Tech Stack"/>
+</p>
+
+### 📊 GitHub 统计 / Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=yangyin18&show_icons=true&theme=react&count_private=true&hide_border=true" height="170" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yangyin18&layout=compact&theme=react&hide_border=true" height="170" alt="Top Languages"/>
+</p>
+
+### 🏆 成就 / Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=yangyin18&theme=onedark&no-frame=true&row=1&column=6" alt="Trophies"/>
+</p>
+
+### 🚀 精选项目 / Featured Projects
+
+| 项目 | 说明 | 技术 |
+|:---|:---|:---|
+| [🎵 music](https://github.com/yangyin18/music) | 在线音乐播放页面 | HTML / JS |
+| [⚪ wzq](https://github.com/yangyin18/wzq) | 五子棋小游戏 | HTML / JS |
+| [📄 yang](https://github.com/yangyin18/yang) | 个人主页 | HTML / CSS / JS |
+| [🐍 flask](https://github.com/yangyin18/flask) | Flask 入门 Demo | Python |
+| [🌐 yangyin.github.io](https://github.com/yangyin18/yangyin.github.io) | 个人网站 / 诗来音乐 | HTML |
+
+### 📫 找到我 / Find Me
+
+<p align="center">
+  <a href="https://github.com/yangyin18"><img src="https://img.shields.io/badge/GitHub-yangyin18-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://gitee.com/yangyin18"><img src="https://img.shields.io/badge/Gitee-yangyin18-C71D23?style=for-the-badge&logo=gitee&logoColor=white" alt="Gitee"/></a>
+  <a href="https://yangyin18.github.io"><img src="https://img.shields.io/badge/Website-yangyin18.github.io-4c8fd6?style=for-the-badge&logo=html5&logoColor=white" alt="Website"/></a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=yangyin18&color=5ec64a&style=flat" alt="Profile Views"/>
+</p>
