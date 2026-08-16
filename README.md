@@ -1028,9 +1028,9 @@
     <clipPath id="l2"><rect x="0" y="0" height="90" width="0"><animate attributeName="width" values="0;560;560;0" keyTimes="0;0.42;0.75;1" dur="18s" begin="12s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
   <g font-family="'Fira Code','Consolas','Courier New',monospace" font-size="40" fill="#2f2f2f">
-    <text clip-path="url(#l0)" x="30" y="80">Hello, I'm yangyin18</text>
-    <text clip-path="url(#l1)" x="30" y="80">Welcome to my world</text>
-    <text clip-path="url(#l2)" x="30" y="80">Every block has a story</text>
+    <text clip-path="url(#l0)" x="30" y="80">Minecraft · 我的世界</text>
+    <text clip-path="url(#l1)" x="30" y="80">Survival Mode · 生存模式</text>
+    <text clip-path="url(#l2)" x="30" y="80">Build, Mine &amp; Explore</text>
   </g>
   <rect x="600" y="28" width="6" height="46" fill="#4a9c3c">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
