@@ -1021,22 +1021,18 @@
     <rect x="745" y="110" width="1" height="1" fill="#ffffff"/>
 </svg>
 
-<p align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 8 8" shape-rendering="crispEdges" role="img" aria-label="Creeper">
-    <rect width="8" height="8" fill="#7CB342"/>
-    <rect x="2" y="2" width="1" height="2" fill="#222222"/>
-    <rect x="5" y="2" width="1" height="2" fill="#222222"/>
-    <rect x="1" y="5" width="6" height="1" fill="#222222"/>
-    <rect x="1" y="6" width="6" height="1" fill="#222222"/>
-  </svg>
-</p>
-
-<p align="center">
-  <b>⛏️ 你好,我是 yangyin18</b>
-  <br/>
-  <span style="color:#ffff55">&lt;yangyin18&gt; 加入了服务器</span>
-</p>
-
-<p align="center">
-  🌲 在这片方块世界里 🏠 建造 · ⛏️ 挖掘 · 🗺️ 探索 🌲
-</p>
+<svg viewBox="0 0 820 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="yangyin18 打字动画">
+  <defs>
+    <clipPath id="l0"><rect x="0" y="0" height="90" width="0"><animate attributeName="width" values="0;560;560;0" keyTimes="0;0.42;0.75;1" dur="18s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l1"><rect x="0" y="0" height="90" width="0"><animate attributeName="width" values="0;560;560;0" keyTimes="0;0.42;0.75;1" dur="18s" begin="6s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l2"><rect x="0" y="0" height="90" width="0"><animate attributeName="width" values="0;560;560;0" keyTimes="0;0.42;0.75;1" dur="18s" begin="12s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+  <g font-family="'Fira Code','Consolas','Courier New',monospace" font-size="40" fill="#2f2f2f">
+    <text clip-path="url(#l0)" x="30" y="80">Hello, I'm yangyin18</text>
+    <text clip-path="url(#l1)" x="30" y="80">Welcome to my world</text>
+    <text clip-path="url(#l2)" x="30" y="80">Every block has a story</text>
+  </g>
+  <rect x="600" y="28" width="6" height="46" fill="#4a9c3c">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
