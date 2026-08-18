@@ -4,5 +4,5 @@
 
 <!-- 添加语言占比 -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yangyin18&layout=compact&theme=default" alt="Top Langs" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=yangyin18&layout=compact" alt="Top Langs" />
 </div>
